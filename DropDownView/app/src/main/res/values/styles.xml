@@ -8,4 +8,20 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="drop_text">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:drawableRight">@mipmap/pull_down</item>
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">#999999</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:paddingRight">10dp</item>
+    </style>
+
+    <style name="dropDownAnim" parent="@android:style/Animation.Activity">
+        <item name="android:windowEnterAnimation">@anim/dropdown_unfold</item>
+        <item name="android:windowExitAnimation">@anim/dropdown_retract</item>
+    </style>
 </resources>
